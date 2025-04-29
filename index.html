@@ -34,9 +34,22 @@ I8,      ,8'                                                   I8   8I
         .fender-header {
             font-family: 'Roboto', sans-serif;
         }
+        body::before {
+            content: '';
+            background-image: url('assets/fender-red-large.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 3%;
+            background-size: 300px;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-gradient-to-r from-blue-400 to-blue-600 text-white h-screen flex items-start justify-center pt-60">
+<body class="bg-gradient-to-r from-blue-400/90 to-blue-600/90 text-white h-screen flex items-start justify-center pt-60">
     <div class="absolute top-4 left-4 text-sm font-light tracking-wide flex items-center text-red-500 bg-white p-2 pr-3 rounded shadow-md fender-header">
         <img src="assets/fender-red-large.jpg" alt="Fender Logo" class="h-8 mr-2">
         Fender Authorized Dealer
