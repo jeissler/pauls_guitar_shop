@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <section class="bg-white">
     <h1>Paul's Guitar Shop</h1>
-  </div>
+  </section>
 </template>
 
 <script setup>
