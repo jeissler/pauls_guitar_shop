@@ -6,9 +6,14 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-svgo'
   ],
-  css: ['~/assets/css/main.css'],
+  css: ['~/css/main.css'],
+  svgo: {
+    autoImportPath: false,
+    defaultImport: "component",
+  },
   vite: {
     plugins: [tailwindcss()],
   },
