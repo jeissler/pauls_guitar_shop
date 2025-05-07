@@ -11,19 +11,19 @@
         <h2 class="font-barlow-condensed-semibold text-2xl text-black mb-4 uppercase tracking-wide text-center">Electric</h2>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Setup</span>
-          <span class="font-semibold text-red-600">$70</span>
+          <span class="font-semibold">$70</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Cleaning</span>
-          <span class="font-semibold text-red-600">$20</span>
+          <span class="font-semibold">$20</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Electronics Cleaning</span>
-          <span class="font-semibold text-red-600">$20</span>
+          <span class="font-semibold">$20</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2">
           <span>Pick Guard Replacement</span>
-          <span class="font-semibold text-red-600">$10</span>
+          <span class="font-semibold">$10</span>
         </div>
       </div>
       <!-- Acoustic Category -->
@@ -31,23 +31,23 @@
         <h2 class="font-barlow-condensed-semibold text-2xl text-black mb-4 uppercase tracking-wide text-center">Acoustic</h2>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Setup</span>
-          <span class="font-semibold text-red-600">$80</span>
+          <span class="font-semibold">$60</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Cleaning</span>
-          <span class="font-semibold text-red-600">$15</span>
+          <span class="font-semibold">$15</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Nut Replacement</span>
-          <span class="font-semibold text-red-600">$20</span>
+          <span class="font-semibold">$20</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Bridge Replacement</span>
-          <span class="font-semibold text-red-600">$50</span>
+          <span class="font-semibold">$50</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2">
           <span>Pick Guard Replacement</span>
-          <span class="font-semibold text-red-600">$25</span>
+          <span class="font-semibold">$25</span>
         </div>
       </div>
     </div>
