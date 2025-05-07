@@ -50,7 +50,7 @@
         </div>
       </aside>
       <!-- Main Content -->
-      <main class="p-8 md:col-start-2 md:row-start-2">
+      <main class="p-8 pb-20 md:col-start-2 md:row-start-2">
         <slot />
       </main>
       <!-- Footer -->
