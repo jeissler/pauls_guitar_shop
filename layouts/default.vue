@@ -53,6 +53,10 @@
       <main class="p-8 md:col-start-2 md:row-start-2">
         <slot />
       </main>
+      <!-- Footer -->
+      <footer class="absolute bottom-2 right-4 text-sm text-white/70 font-barlow-condensed-regular z-50 select-none pointer-events-none">
+        &copy; {{ year }} Paul's Guitar Shop All Rights Reserved
+      </footer>
     </div>
   </div>
 </template>
@@ -61,4 +65,5 @@
 import PaulsLogo from '~/assets/pauls_logo.svg'
 import BackWall from '~/assets/photos/back_wall_1.png'
 import { MapPinIcon, PhoneIcon } from '@heroicons/vue/24/solid'
+const year = new Date().getFullYear()
 </script> 
