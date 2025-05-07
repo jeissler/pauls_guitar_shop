@@ -1,20 +1,32 @@
 <template>
   <div class="relative min-h-screen">
     <!-- Background image as <img> -->
-    <img :src="BackWall" alt="lots of high end guitars on the wall" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <img :src="background" alt="lots of high end guitars on the wall" class="absolute inset-0 w-full h-full object-cover z-0" />
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black/70 z-10 pointer-events-none"></div>
     <!-- Main content -->
     <div class="relative z-20 grid grid-cols-1 md:grid-cols-[320px_1fr] md:grid-rows-[auto_1fr] w-full max-w-7xl mx-auto min-h-screen text-white">
       <!-- Navigation-->
       <nav class="flex flex-wrap items-center justify-center font-barlow-condensed-regular text-xl uppercase p-4 md:col-start-2 md:row-start-1 drop-shadow-sm">
-        <NuxtLink to="/" class="px-3 hover:text-red-500 transition-colors">About</NuxtLink>
+        <div class="flex items-center gap-1 px-3">
+          <ChevronDoubleRightIcon v-if="route.path === '/'" class="w-5 h-5 text-red-500/77" />
+          <NuxtLink to="/" :class="['transition-colors', route.path === '/' ? 'text-red-500' : 'hover:text-red-500']">About</NuxtLink>
+        </div>
         <span>//</span>
-        <NuxtLink to="/inventory" class="px-3 hover:text-red-500 transition-colors">Inventory</NuxtLink>
+        <div class="flex items-center gap-1 px-3">
+          <ChevronDoubleRightIcon v-if="route.path === '/inventory'" class="w-5 h-5 text-red-500/77" />
+          <NuxtLink to="/inventory" :class="['transition-colors', route.path === '/inventory' ? 'text-red-500' : 'hover:text-red-500']">Inventory</NuxtLink>
+        </div>
         <span>//</span>
-        <NuxtLink to="/services" class="px-3 hover:text-red-500 transition-colors">Services</NuxtLink>
+        <div class="flex items-center gap-1 px-3">
+          <ChevronDoubleRightIcon v-if="route.path === '/services'" class="w-5 h-5 text-red-500/77" />
+          <NuxtLink to="/services" :class="['transition-colors', route.path === '/services' ? 'text-red-500' : 'hover:text-red-500']">Services</NuxtLink>
+        </div>
         <span>//</span>
-        <NuxtLink to="/contact" class="px-2 hover:text-red-500 transition-colors">Contact</NuxtLink>
+        <div class="flex items-center gap-1 px-3">
+          <ChevronDoubleRightIcon v-if="route.path === '/contact'" class="w-5 h-5 text-red-500/77" />
+          <NuxtLink to="/contact" :class="['transition-colors', route.path === '/contact' ? 'text-red-500' : 'hover:text-red-500']">Contact</NuxtLink>
+        </div>
       </nav>
       <!-- Sidebar -->
       <aside class="max-w-80 mx-auto md:mx-0 bg-[#f3ead8]/88 flex flex-col px-8 pt-2 pb-8 md:row-span-2 md:row-start-1 drop-shadow-2xl">
@@ -35,7 +47,7 @@
           <div class="flex items-center gap-2 mb-12">
             <a href="tel:8162246868" class="group flex items-center gap-2 font-barlow-condensed-semibold text-3xl text-black tracking-wider text-left hover:text-red-500 transition-colors">
               <PhoneIcon class="w-5 h-5 text-black group-hover:text-red-500 transition-colors" />
-              816-224-6868
+              816-598-8378
             </a>
           </div>
         </div>
@@ -64,6 +76,23 @@
 <script setup>
 import PaulsLogo from '~/assets/pauls_logo.svg'
 import BackWall from '~/assets/photos/back_wall_1.png'
-import { MapPinIcon, PhoneIcon } from '@heroicons/vue/24/solid'
+import SideWall from '~/assets/photos/side_wall.png'
+import Player2 from '~/assets/photos/player_2.png'
+import DeluxeReverb from '~/assets/photos/deluxe_reverb.png'
+import { MapPinIcon, PhoneIcon, ChevronDoubleRightIcon } from '@heroicons/vue/24/solid'
+import { useRoute } from 'vue-router'
 const year = new Date().getFullYear()
+const route = useRoute()
+const background = computed(() => {
+  if (route.path === '/contact') {
+    return DeluxeReverb
+  }
+  if (route.path === '/inventory') {
+    return SideWall
+  }
+  if (route.path === '/services') {
+    return Player2
+  }
+  return BackWall
+})
 </script> 

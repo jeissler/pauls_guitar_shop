@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-black/66 p-6 pb-10">
+  <section class="bg-black/66 p-6 pb-10 rounded-sm">
     <h1 class="font-barlow-condensed-medium text-4xl leading-tight uppercase text-left drop-shadow-sm mb-3">Have Questions?</h1>
     <p class="font-barlow-condensed-regular text-xl text-left leading-relaxed">
       We've got answers, usually, or can at least point you in the right direction. Feel free to call or stop by our location. 
