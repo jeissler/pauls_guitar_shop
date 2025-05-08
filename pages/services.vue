@@ -2,7 +2,7 @@
   <section>
     <h1 class="font-barlow-condensed-medium text-4xl leading-tight uppercase text-left drop-shadow-sm mb-3">Services & Pricing</h1>
     <p class="font-barlow-condensed-regular text-xl text-left leading-relaxed mb-8">
-      We offer professional luthier services every week for both electric and acoustic instruments. Below are our most common setup services and prices for standard 4-6 string guitars and basses.
+      We offer professional luthier services every week for both electric and acoustic instruments. Below are our most common setup services and prices for standard 4-6 string guitars and basses. *Please note our technician is an independent contractor and is not employed by our business.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
