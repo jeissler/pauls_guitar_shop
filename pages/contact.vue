@@ -14,7 +14,7 @@
           <li><span class="font-semibold">Wednesday:</span> 11:00am – 6:00pm</li>
           <li><span class="font-semibold">Thursday:</span> 11:00am – 6:00pm</li>
           <li><span class="font-semibold">Friday:</span> 11:00am – 6:00pm</li>
-          <li><span class="font-semibold">Saturday:</span> 10:00am – 5:00pm</li>
+          <li><span class="font-semibold">Saturday:</span> 10:00am – 3:00pm</li>
           <li><span class="font-semibold">Sunday:</span> Closed</li>
         </ul>
       </div>
