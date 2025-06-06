@@ -11,19 +11,15 @@
         <h2 class="font-barlow-condensed-semibold text-2xl text-black mb-4 uppercase tracking-wide text-center">Electric</h2>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Setup</span>
-          <span class="font-semibold">$70</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Cleaning</span>
-          <span class="font-semibold">$20</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Electronics Cleaning</span>
-          <span class="font-semibold">$20</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2">
           <span>Pick Guard Replacement</span>
-          <span class="font-semibold">$10</span>
         </div>
       </div>
       <!-- Acoustic Category -->
@@ -31,28 +27,23 @@
         <h2 class="font-barlow-condensed-semibold text-2xl text-black mb-4 uppercase tracking-wide text-center">Acoustic</h2>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Setup</span>
-          <span class="font-semibold">$60</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Cleaning</span>
-          <span class="font-semibold">$15</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Nut Replacement</span>
-          <span class="font-semibold">$20</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10">
           <span>Bridge Replacement</span>
-          <span class="font-semibold">$50</span>
         </div>
         <div class="flex justify-between items-center font-barlow-condensed-regular text-lg text-black/90 py-2">
           <span>Pick Guard Replacement</span>
-          <span class="font-semibold">$25</span>
         </div>
       </div>
     </div>
     <p class="font-barlow-condensed-regular text-xl text-left leading-relaxed mt-8">
-      This is a general guide to pricing, please inquire with any special requests. If you are somehow unsatisfied with your instrument after returning from us, we will gladly make adjustments at no additional charge within reason. 
+      This is a general guide to our services, please inquire for current pricing, availability and special requests. If you are somehow unsatisfied with your instrument after returning from us, we will gladly make adjustments at no additional charge within reason. 
     </p>
   </section>
 </template>

@@ -24,7 +24,7 @@
       <ChevronDoubleRightIcon class="w-7 h-7 text-red-500" />
       <h2 class="font-barlow-condensed-medium text-3xl leading-tight uppercase text-left drop-shadow-sm">
         Affordable & Professional Luthier Services
-        <NuxtLink to="/services" class="text-base font-barlow-condensed-regular hover:underline ml-2 whitespace-nowrap">pricing</NuxtLink>
+        <NuxtLink to="/services" class="text-base font-barlow-condensed-regular hover:underline ml-2 whitespace-nowrap">listing</NuxtLink>
       </h2>
     </div>
   </section>
