@@ -35,7 +35,9 @@
           Fender&reg; Authorized Dealer
         </div>
         <div class="flex flex-col items-center mb-12 mt-8">
-          <PaulsLogo class="w-55 opacity-88 drop-shadow" />
+          <NuxtLink to="/">
+            <PaulsLogo class="w-55 opacity-88 drop-shadow hover:opacity-100 transition-opacity" />
+          </NuxtLink>
         </div>
         <div class="flex flex-col flex-1 gap-2">
           <div class="mb-6">
