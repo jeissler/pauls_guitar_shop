@@ -4,6 +4,8 @@
     <img :src="background" alt="lots of high end guitars on the wall" class="absolute inset-0 w-full h-full object-cover z-0" />
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black/70 z-10 pointer-events-none"></div>
+    <!-- Message Banner -->
+    <MessageBanner />
     <!-- Main content -->
     <div class="relative z-20 grid grid-cols-1 md:grid-cols-[320px_1fr] md:grid-rows-[auto_1fr] w-full max-w-7xl mx-auto min-h-screen text-white">
       <!-- Navigation-->
