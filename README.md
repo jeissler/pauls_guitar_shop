@@ -1,75 +1,40 @@
-# Nuxt Minimal Starter
+### Site for pauls guitar shop
+=======
+# Paul's Guitar Shop 🎸
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A fun and heartfelt site I built for my hometown guitar shop — [Paul's Guitar Shop](https://paulsguitarshop.com). Paul is a local legend and all-around great guy, and this project was a blast to work on. I wanted to give his shop a fresh digital presence that matched the vibe of the store: welcoming, down-to-earth, and passionate about guitars.
 
-## Setup
+## 🧰 Tech Stack
 
-Make sure to install dependencies:
+This site was built with:
 
-```bash
-# npm
-npm install
+- **Vue 3** — using the Composition API
+- **Vite** — for lightning-fast builds and dev experience
+- **Tailwind CSS v4** — for utility-first, responsive design
+- **Netlify** — for simple and fast deployment
+- **Pinia** — for state management (simple but effective for this use case)
 
-# pnpm
-pnpm install
+Bonus: The site uses **lazy loading**, **mobile-first responsiveness**, and **semantic HTML** for good performance and accessibility.
 
-# yarn
-yarn install
+## 🚀 Live Site
 
-# bun
-bun install
-```
+Check it out here:  
+🌐 **[paulsguitarshop.com](https://paulsguitarshop.com)**
 
-## Development Server
+## ❤️ Why I Love This Project
 
-Start the development server on `http://localhost:3000`:
+- It was a chance to give back to a local business I care about
+- I had total creative freedom to shape the vibe and UX
+- I got to work with real product photos and stories
+- It reminded me that the web can be personal and meaningful
 
-```bash
-# npm
-npm run dev
+## 📸 Next Steps
 
-# pnpm
-pnpm dev
+- Adding an update section for Paul to share gear news
+- Integrating a lightweight CMS for easy updates
+- Enhancing accessibility and SEO over time
 
-# yarn
-yarn dev
+## 🙌 Acknowledgments
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Huge thanks to Paul for trusting me with his shop’s online face.  
+If you're ever in town — stop in and check out his collection. You won’t regret it.
