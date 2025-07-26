@@ -8,7 +8,7 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[200px]">
       <!-- First row: Fender Logo, Back Wall 2, Side Wall -->
       <div class="md:col-span-2 bg-[#f3ead8]/77 p-6 rounded-lg shadow-lg flex items-center justify-center">
-        <NuxtImg src="images/fender-red-large.jpg" alt="Fender Authorized Dealer" class="h-32 w-full object-contain" />
+        <NuxtImg src="fender-red-large.jpg" alt="Fender Authorized Dealer" class="h-32 w-full object-contain" />
       </div>
       <div class="bg-[#f3ead8]/88 p-4 rounded-lg shadow-lg overflow-hidden">
         <NuxtImg src="images/back_wall_2.png" alt="Store Back Wall 2" class="w-full h-full object-cover rounded" />

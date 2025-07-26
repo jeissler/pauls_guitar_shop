@@ -33,7 +33,7 @@
       <!-- Sidebar -->
       <aside class="w-full max-w-90 md:max-w-80 mx-auto md:mx-0 bg-[#f3ead8]/88 flex flex-col px-8 pt-2 pb-8 md:row-span-2 md:row-start-1 drop-shadow-2xl">
         <div class="font-barlow-condensed-medium flex items-center justify-center text-red-500">
-          <NuxtImg src="images/fender-red-large.jpg" alt="Fender Logo" class="h-12 mr-2" />
+          <NuxtImg src="fender-red-large.jpg" alt="Fender Logo" class="h-12 mr-2" />
           Fender&reg; Authorized Dealer
         </div>
         <div class="flex flex-col items-center mb-12 mt-8">
