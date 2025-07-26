@@ -2,13 +2,13 @@
   <section>
     <h1 class="font-barlow-condensed-medium text-4xl leading-tight uppercase text-left drop-shadow-sm mb-3">Coming Soon!</h1>
     <p class="font-barlow-condensed-regular text-xl text-left leading-relaxed mb-8">
-      We are currently working on getting our inventory catalog up-to-date. Please check back soon for more information.
+      {{ inventoryText }}
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[200px]">
       <!-- First row: Fender Logo, Back Wall 2, Side Wall -->
       <div class="md:col-span-2 bg-[#f3ead8]/77 p-6 rounded-lg shadow-lg flex items-center justify-center">
-        <img :src="FenderLogo" alt="Fender Authorized Dealer" class="h-32 w-full object-contain" />
+        <img src="~/assets/fender-red-large.jpg" alt="Fender Authorized Dealer" class="h-32 w-full object-contain" />
       </div>
       <div class="bg-[#f3ead8]/88 p-4 rounded-lg shadow-lg overflow-hidden">
         <img src="~/assets/photos/back_wall_2.png" alt="Store Back Wall 2" class="w-full h-full object-cover rounded">
@@ -48,5 +48,7 @@
 </template>
 
 <script setup>
-import FenderLogo from '~/assets/fender-red-large.jpg'
+import contentData from '~/content/content.json'
+
+const inventoryText = contentData.find(e => e.Section === 'inventory')?.Content || ''
 </script> 
