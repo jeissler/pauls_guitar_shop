@@ -10,6 +10,20 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-svgo'
   ],
+  image: {
+    provider: (process.env.NODE_ENV === 'production' || process.env.NETLIFY || process.env.NETLIFY_DEV) ? 'netlify' : 'ipx',
+    quality: 100,
+    format: ['webp'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+  },
   css: ['~/css/main.css'],
   svgo: {
     autoImportPath: false,
