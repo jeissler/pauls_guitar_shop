@@ -5,12 +5,7 @@
 </template>
 
 <script setup>
-// Import content directly from JSON file
 import contentData from '~/content/content.json'
 
-// Find the top_banner section and extract the content
-const bannerContent = computed(() => {
-  const topBannerSection = contentData.find(item => item.Section === 'top_banner')
-  return topBannerSection?.Content || null
-})
+const bannerContent = contentData.find(item => item.Section === 'top_banner')?.Content || ''
 </script> 
