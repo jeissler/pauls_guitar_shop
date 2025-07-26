@@ -5,7 +5,7 @@
       {{ servicesIntro }}
     </p>
 
-    <div class="bg-[#f3ead8]/66 rounded-lg shadow-md p-6 max-w-3xl mx-auto">
+    <div class="bg-cream/66 rounded-lg shadow-md p-6 max-w-3xl mx-auto">
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <li v-for="(service, idx) in servicesList" :key="idx" class="font-barlow-condensed-regular text-lg text-black/90 py-2 border-b border-black/10 flex items-center">
           <span>{{ service }}</span>
