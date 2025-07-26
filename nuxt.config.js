@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     'nuxt-svgo'
   ],
   image: {
+    dir: 'assets',
     provider: (process.env.NODE_ENV === 'production' || process.env.NETLIFY || process.env.NETLIFY_DEV) ? 'netlify' : 'ipx',
     quality: 100,
     format: ['webp'],
