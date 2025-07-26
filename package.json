@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/fetchContent.js",
+    "prebuild": "node scripts/fetchContent.js && node scripts/copyImages.js",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
