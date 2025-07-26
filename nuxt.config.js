@@ -2,10 +2,10 @@ import { defineNuxtConfig } from 'nuxt/config'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
+  compatibilityDate: '2025-07-27',
   plugins: ['~/plugins/ascii-head.client.js'],
   devtools: { enabled: true },
   modules: [
-    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
     'nuxt-svgo'
