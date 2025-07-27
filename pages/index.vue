@@ -2,7 +2,7 @@
   <section class="bg-black/66 p-6 pb-10 rounded-sm">
     <h1 class="font-barlow-condensed-medium text-4xl leading-tight uppercase text-left drop-shadow-sm mb-3">Welcome!</h1>
     <p class="font-barlow-condensed-regular text-xl text-left leading-relaxed">
-      We are a family owned and operated “brick and mortar” retail guitar shop that has been serving Blue Springs and the greater Kansas City, Missouri area since 2018. When you come in you'll always find Paul with a smile and a helping hand. It is our absolute pleasure to serve musicians of all ages and skill levels. Come on in and feel free to browse around, ask questions or try out an instrument. We're here to help you find the perfect gear for your needs. All are welcome here! We are open Tuesday through Saturday, and closed on Sundays and Mondays.
+      {{ welcomeText }}
     </p> 
   </section>
   <section class="mt-10 px-7">
@@ -33,7 +33,7 @@
 <script setup>
 import { ChevronDoubleRightIcon } from '@heroicons/vue/24/solid'
 import { NuxtLink } from '#components'
-definePageMeta({
-  layout: 'default'
-})
+import contentData from '~/content/content.json'
+
+const welcomeText = contentData.find(e => e.Section === 'welcome')?.Content || ''
 </script> 

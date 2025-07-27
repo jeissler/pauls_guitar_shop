@@ -1,9 +1,11 @@
 <template>
   <div class="relative min-h-screen">
-    <!-- Background image as <img> -->
-    <img :src="background" alt="lots of high end guitars on the wall" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <!-- Background image as <NuxtImg> -->
+    <NuxtImg :src="backgroundSrc" alt="lots of high end guitars on the wall" class="absolute inset-0 w-full h-full object-cover z-0" />
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black/70 z-10 pointer-events-none"></div>
+    <!-- Message Banner -->
+    <MessageBanner />
     <!-- Main content -->
     <div class="relative z-20 grid grid-cols-1 md:grid-cols-[320px_1fr] md:grid-rows-[auto_1fr] w-full max-w-7xl mx-auto min-h-screen text-white">
       <!-- Navigation-->
@@ -29,9 +31,9 @@
         </div>
       </nav>
       <!-- Sidebar -->
-      <aside class="w-full max-w-90 md:max-w-80 mx-auto md:mx-0 bg-[#f3ead8]/88 flex flex-col px-8 pt-2 pb-8 md:row-span-2 md:row-start-1 drop-shadow-2xl">
+      <aside class="w-full max-w-90 md:max-w-80 mx-auto md:mx-0 bg-cream/88 flex flex-col px-8 pt-2 pb-8 md:row-span-2 md:row-start-1 drop-shadow-2xl">
         <div class="font-barlow-condensed-medium flex items-center justify-center text-red-500">
-          <img src="assets/fender-red-large.jpg" alt="Fender Logo" class="h-12 mr-2">
+          <NuxtImg src="images/fender-red-large.jpg" alt="Fender Logo" class="h-12 mr-2" />
           Fender&reg; Authorized Dealer
         </div>
         <div class="flex flex-col items-center mb-12 mt-8">
@@ -77,24 +79,22 @@
 
 <script setup>
 import PaulsLogo from '~/assets/pauls_logo.svg'
-import BackWall from '~/assets/photos/back_wall_1.png'
-import SideWall from '~/assets/photos/side_wall.png'
-import Player2 from '~/assets/photos/player_2.png'
-import DeluxeReverb from '~/assets/photos/deluxe_reverb.png'
 import { MapPinIcon, PhoneIcon, ChevronDoubleRightIcon } from '@heroicons/vue/24/solid'
 import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+import { NuxtImg } from '#components'
 const year = new Date().getFullYear()
 const route = useRoute()
-const background = computed(() => {
+const backgroundSrc = computed(() => {
   if (route.path === '/contact') {
-    return DeluxeReverb
+    return '/images/deluxe_reverb.png'
   }
   if (route.path === '/inventory') {
-    return SideWall
+    return '/images/side_wall.png'
   }
   if (route.path === '/services') {
-    return Player2
+    return '/images/player_2.png'
   }
-  return BackWall
+  return '/images/back_wall_1.png'
 })
 </script> 
